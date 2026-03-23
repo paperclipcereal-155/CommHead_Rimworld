@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>Apparel_CommHeadset</defName>
+		<label>communications headset</label>
+		<description>A lightweight communications headset and laryngophone. Any two faction members on the same map who wear one can hold a conversation regardless of distance.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Display/Headset</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<Flammability>0.4</Flammability>
+			<MarketValue>300</MarketValue>
+		</statBases>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups Inherit="False">
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags Inherit="False">
+				<li>CommHeadset</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Clothes</li>
+		</tradeTags>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

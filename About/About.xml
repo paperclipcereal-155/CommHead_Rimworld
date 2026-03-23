@@ -1,0 +1,20 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Communications Headset</name>
+	<author>Hakurouken</author>
+	<packageId>Hakurouken.CommHeadset</packageId>
+	<SupportedVersions>
+		<li>1.6</li>
+	</SupportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.Harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.Harmony</li>
+	</loadAfter>
+	<description>Adds a Communications Headset - a lightweight utility-layer headpiece crafted at the Machining Table. Any two faction pawns on the same map who both wear one can interact socially regardless of distance.</description>
+</ModMetaData>	

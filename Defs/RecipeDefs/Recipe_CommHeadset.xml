@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef>
+		<defName>Make_CommHeadset</defName>
+		<label>make communications headset</label>
+		<description>Craft a communications headset.</description>
+		<jobString>Making a communications headset.</jobString>
+		<workAmount>300</workAmount>
+		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<recipeUsers>
+			<li>TableMachining</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+		<researchPrerequisite>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>ResourcesRaw</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Apparel_CommHeadset>1</Apparel_CommHeadset>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+</Defs>
