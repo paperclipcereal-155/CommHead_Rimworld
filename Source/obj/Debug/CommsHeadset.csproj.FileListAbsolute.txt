@@ -5,3 +5,4 @@ C:\Users\User1\source\repos\Rimworld\CommsHeadset\Assemblies\CommsHeadset.dll
 C:\Users\User1\source\repos\Rimworld\CommsHeadset\Assemblies\CommsHeadset.pdb
 C:\Users\User1\source\repos\Rimworld\CommsHeadset\Source\obj\Debug\CommsHeadset.dll
 C:\Users\User1\source\repos\Rimworld\CommsHeadset\Source\obj\Debug\CommsHeadset.pdb
+C:\Users\User1\source\repos\Rimworld\CommsHeadset\Source\obj\Debug\CommsHeadset.sourcelink.json
