@@ -52,12 +52,17 @@ namespace CommsHeadset
     }
 
     [HarmonyPatch(typeof(Pawn_InteractionsTracker), nameof(Pawn_InteractionsTracker.CanInteractNowWith), new[] { typeof(Pawn), typeof(InteractionDef) })]
-    public static class Patch_CanInteractWith_Unified
+    public static class Patch_CanInteractWith_SameFactionOnly
     {
         [HarmonyPrefix]
-        public static bool Prefix(Pawn ___pawn, Pawn recipient, InteractionDef interactionDef, ref bool __result)
+        public static bool Prefix(Pawn ___pawn, Pawn recipient, ref bool __result)
         {
-            if (___pawn?.MapHeld == null || recipient?.MapHeld == null || ___pawn.MapHeld != recipient.MapHeld)
+
+            if (___pawn?.MapHeld == null || recipient?.MapHeld == null) return true;
+            if (___pawn.MapHeld != recipient.MapHeld) return true;
+
+
+            if (___pawn.Faction == null || ___pawn.Faction != recipient.Faction)
                 return true;
 
             var network = ___pawn.MapHeld.GetComponent<MapComponent_CommNetwork>();
@@ -71,10 +76,7 @@ namespace CommsHeadset
         }
 
         [HarmonyPostfix]
-        public static void Postfix()
-        {
-            RadioSocialState.IsSocialActive = false;
-        }
+        public static void Postfix() => RadioSocialState.IsSocialActive = false;
     }
 
     [HarmonyPatch(typeof(GenSight), nameof(GenSight.LineOfSight))]

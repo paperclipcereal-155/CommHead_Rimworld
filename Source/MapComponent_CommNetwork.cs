@@ -43,5 +43,22 @@ namespace CommsHeadset
             return false;
         }
 
+        public override void FinalizeInit()
+        {
+            base.FinalizeInit();
+            RebuildCache();
+
+            Log.Message($"[CommsHeadset] Network initialized for Map {map.uniqueID}. Indexing pawns...");
+        }
+
+        public void RebuildCache()
+        {
+
+            foreach (Pawn pawn in map.mapPawns.AllPawnsSpawned)
+            {
+
+                Notify_ApparelChanged(pawn);
+            }
+        }
     }
 }
