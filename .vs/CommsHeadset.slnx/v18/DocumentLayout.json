@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\Patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\Patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\CommHeadsetMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\CommHeadsetMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\MapComponent_CommNetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\MapComponent_CommNetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Defs\\ThingDefs\\Apparel_CommHeadset.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Defs\\ThingDefs\\Apparel_CommHeadset.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Defs\\RecipeDefs\\Recipe_CommHeadset.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Defs\\RecipeDefs\\Recipe_CommHeadset.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\MapComponent_CommNetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\MapComponent_CommNetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\CommHeadsetMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\CommHeadsetMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\Patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\Patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\About\\About.xml||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -34,20 +34,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CommHeadsetMod.cs",
               "DocumentMoniker": "C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\CommHeadsetMod.cs",
               "RelativeDocumentMoniker": "Source\\CommHeadsetMod.cs",
               "ToolTip": "C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\CommHeadsetMod.cs",
               "RelativeToolTip": "Source\\CommHeadsetMod.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAqwDYAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwDYAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T04:41:18.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-27T04:41:18.871Z"
             },
             {
               "$type": "Document",
@@ -57,14 +56,13 @@
               "RelativeDocumentMoniker": "Source\\MapComponent_CommNetwork.cs",
               "ToolTip": "C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\MapComponent_CommNetwork.cs",
               "RelativeToolTip": "Source\\MapComponent_CommNetwork.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAqwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAqwDcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T20:52:06.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-21T20:52:06.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Recipe_CommHeadset.xml",
               "DocumentMoniker": "C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Defs\\RecipeDefs\\Recipe_CommHeadset.xml",
               "RelativeDocumentMoniker": "Defs\\RecipeDefs\\Recipe_CommHeadset.xml",
@@ -72,34 +70,32 @@
               "RelativeToolTip": "Defs\\RecipeDefs\\Recipe_CommHeadset.xml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-03-21T20:45:38.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-21T20:45:38.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Apparel_CommHeadset.xml",
               "DocumentMoniker": "C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Defs\\ThingDefs\\Apparel_CommHeadset.xml",
               "RelativeDocumentMoniker": "Defs\\ThingDefs\\Apparel_CommHeadset.xml",
               "ToolTip": "C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Defs\\ThingDefs\\Apparel_CommHeadset.xml",
               "RelativeToolTip": "Defs\\ThingDefs\\Apparel_CommHeadset.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2026-03-21T19:48:15.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Patches.cs",
               "DocumentMoniker": "C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\Patches.cs",
               "RelativeDocumentMoniker": "Source\\Patches.cs",
               "ToolTip": "C:\\Users\\User1\\source\\repos\\Rimworld\\CommsHeadset\\Source\\Patches.cs",
               "RelativeToolTip": "Source\\Patches.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAAAH0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAH0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T18:27:46.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-21T18:27:46.736Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "About\\About.xml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-03-21T17:58:13.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-21T17:58:13.636Z"
             }
           ]
         }

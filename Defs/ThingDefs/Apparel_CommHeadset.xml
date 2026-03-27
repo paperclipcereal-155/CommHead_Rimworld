@@ -14,6 +14,7 @@
 		<graphicData>
 			<texPath>Display/Headset</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>

@@ -30,7 +30,11 @@ namespace CommsHeadset
         public CommHeadsetMod(ModContentPack content) : base(content)
         {
             Settings = GetSettings<CommsHeadsetSettings>();
-            new Harmony("Hakurouken.CommHeadset").PatchAll();
+            LongEventHandler.QueueLongEvent(() =>
+            {
+                var harmony = new Harmony("Hakurouken.CommHeadset");
+                harmony.PatchAll();
+            }, "InitializingCommsHeadset", false, null);
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
@@ -48,12 +52,25 @@ namespace CommsHeadset
 
             listing.Gap();
 
+            listing.Label("Minimum Faction Tech Level to Spawn:");
 
-            listing.Label($"Minimum Tech Level: {Settings.minTechLevel.ToString()}");
+            if (listing.ButtonText("Neolithic" + (Settings.minTechLevel == TechLevel.Neolithic ? " (ACTIVE)" : "")))
+                Settings.minTechLevel = TechLevel.Neolithic;
 
-            float techVal = (float)Settings.minTechLevel;
-            techVal = listing.Slider(techVal, 1f, 7f);
-            Settings.minTechLevel = (TechLevel)Mathf.RoundToInt(techVal);
+            if (listing.ButtonText("Medieval" + (Settings.minTechLevel == TechLevel.Medieval ? " (ACTIVE)" : "")))
+                Settings.minTechLevel = TechLevel.Medieval;
+
+            if (listing.ButtonText("Industrial" + (Settings.minTechLevel == TechLevel.Industrial ? " (ACTIVE)" : "")))
+                Settings.minTechLevel = TechLevel.Industrial;
+
+            if (listing.ButtonText("Spacer" + (Settings.minTechLevel == TechLevel.Spacer ? " (ACTIVE)" : "")))
+                Settings.minTechLevel = TechLevel.Spacer;
+
+            if (listing.ButtonText("Ultra" + (Settings.minTechLevel == TechLevel.Ultra ? " (ACTIVE)" : "")))
+                Settings.minTechLevel = TechLevel.Ultra;
+
+            if (listing.ButtonText("Archotech" + (Settings.minTechLevel == TechLevel.Archotech ? " (ACTIVE)" : "")))
+                Settings.minTechLevel = TechLevel.Archotech;
 
             listing.End();
         }

@@ -4,9 +4,13 @@ using Verse;
 
 namespace CommsHeadset
 {
+
     [StaticConstructorOnStartup]
     public class MapComponent_CommNetwork : MapComponent
     {
+
+        private bool _initialized = false;
+
         private readonly
             HashSet<Pawn> _wearers = new HashSet<Pawn>();
 
@@ -43,12 +47,17 @@ namespace CommsHeadset
             return false;
         }
 
-        public override void FinalizeInit()
+        public override void MapComponentTick()
         {
-            base.FinalizeInit();
-            RebuildCache();
+            base.MapComponentTick();
 
-            Log.Message($"[CommsHeadset] Network initialized for Map {map.uniqueID}. Indexing pawns...");
+
+            if (!_initialized && Find.TickManager.TicksGame > 1)
+            {
+                RebuildCache();
+                _initialized = true;
+                Log.Message($"[CommsHeadset] Network built for Map {map.uniqueID}. Indexing complete.");
+            }
         }
 
         public void RebuildCache()
@@ -56,8 +65,10 @@ namespace CommsHeadset
 
             foreach (Pawn pawn in map.mapPawns.AllPawnsSpawned)
             {
-
-                Notify_ApparelChanged(pawn);
+                if (pawn != null)
+                {
+                    Notify_ApparelChanged(pawn);
+                }
             }
         }
     }

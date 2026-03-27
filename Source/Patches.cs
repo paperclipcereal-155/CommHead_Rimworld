@@ -112,26 +112,20 @@ namespace CommsHeadset
     {
         public static void Postfix(Pawn pawn)
         {
-            if (pawn.apparel == null || pawn.Faction == null || pawn.Faction.IsPlayer) return;
+
+            if (pawn?.Faction?.def == null) return;
+
+
+            if (pawn.Faction.IsPlayer) return;
 
             if (pawn.Faction.def.techLevel < CommHeadsetMod.Settings.minTechLevel) return;
 
-            bool isAlly = pawn.Faction.RelationKindWith(Faction.OfPlayer) == FactionRelationKind.Ally;
-            bool isEnemy = pawn.Faction.HostileTo(Faction.OfPlayer);
-
-            bool allowedByFaction = (isAlly && CommHeadsetMod.Settings.allowAlliesToSpawn) ||
-                                    (isEnemy && CommHeadsetMod.Settings.allowEnemiesToSpawn);
-
-            if (allowedByFaction)
+            if (Rand.Value <= CommHeadsetMod.Settings.spawnRate)
             {
-                if (Rand.Value <= CommHeadsetMod.Settings.spawnRate)
+                ThingDef headsetDef = DefDatabase<ThingDef>.GetNamed("Apparel_CommHeadset", false);
+                if (headsetDef != null)
                 {
-                    ThingDef headsetDef = ThingDef.Named("Apparel_CommHeadset");
-                    if (headsetDef != null)
-                    {
-                        Apparel headset = (Apparel)ThingMaker.MakeThing(headsetDef);
-                        pawn.apparel.Wear(headset);
-                    }
+                    pawn.apparel.Wear((Apparel)ThingMaker.MakeThing(headsetDef));
                 }
             }
         }
